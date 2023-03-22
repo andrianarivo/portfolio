@@ -1,0 +1,11 @@
+body {
+  background-image: url('background.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url('background_mobile.svg');
+  }
+}
