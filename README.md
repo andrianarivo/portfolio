@@ -99,8 +99,6 @@ To run the project open `index.html`
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@andrianarivo](https://github.com/andrianarivo)
