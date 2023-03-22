@@ -1,4 +1,5 @@
 body {
+  font-family: 'Poppins', sans-serif;
   background-image: url('background.svg');
   background-size: cover;
   background-attachment: fixed;
@@ -8,4 +9,15 @@ body {
   body {
     background-image: url('background_mobile.svg');
   }
+}
+
+.header-title {
+  font-size: 2.5em;
+  line-height: 80%;
+  font-weight: bold;
+  color: #172b4d;
+}
+.link {
+  color: #7f8cff;
+  font-weight: medium;
 }
