@@ -79,6 +79,10 @@ ul.nav li {
   flex-basis: 1.5em;
 }
 
+.purple-icon {
+  color: #7f8cff;
+}
+
 @media screen and (min-width: 768px) {
   .menu-icon {
     display: none;
