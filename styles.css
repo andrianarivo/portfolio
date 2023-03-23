@@ -9,12 +9,8 @@ body {
   background-color: #e5e5e5;
 }
 
-.menu {
-  position: fixed;
-}
-
 .h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   line-height: 80%;
   font-weight: bold;
   color: #172b4d;
@@ -26,31 +22,101 @@ body {
 }
 
 .container {
-  background-image: url('background.svg');
   background-color: #fff;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
   display: flex;
   flex-direction: column;
-  height: 80%;
-  padding: 0 1.5em;
+  height: 95%;
   border-bottom-left-radius: 5em;
 }
 
 .content {
+  background-image: url('background.svg');
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
+  padding: 0 1.5em;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
+ul.nav li {
+  display: inline;
+  flex-basis: 7em;
+  flex-shrink: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: #7f8cff;
+}
+
+.app-bar {
+  align-items: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+}
+
+.fa-brands,
+.fa-regular {
+  flex-basis: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .real-content {
+    max-width: 45%;
+  }
+
+  .nav {
+    padding-right: 10%;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .container {
+  .content {
     background-image: url('background_mobile.svg');
   }
 
-  .menu-items {
+  .nav {
     display: none;
+  }
+
+  .logo {
+    padding-left: 2.5em;
+  }
+
+  .menu-icon {
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    background-image: none;
   }
 }
