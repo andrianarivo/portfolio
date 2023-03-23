@@ -17,8 +17,7 @@ body {
 }
 
 .link {
-  color: #7f8cff;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .container {
@@ -36,13 +35,19 @@ body {
   background-position: center center;
   display: flex;
   padding: 0 1.5em;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
-  align-items: center;
   flex-grow: 1;
 }
 
-ul.nav li {
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+.nav ul li {
   display: inline;
   flex-basis: 7em;
   flex-shrink: 0;
@@ -50,7 +55,7 @@ ul.nav li {
   font-weight: 500;
 }
 
-.nav {
+.nav ul {
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -59,7 +64,6 @@ ul.nav li {
 .logo {
   font-weight: bold;
   font-size: 0.6rem;
-  color: #7f8cff;
 }
 
 .app-bar {
@@ -71,7 +75,19 @@ ul.nav li {
 }
 
 .icons {
+  margin: 0;
+  padding: 0;
   display: flex;
+}
+
+ul.icons li {
+  display: inline;
+  flex-basis: 2em;
+  text-align: center;
+}
+
+ul.icons li a {
+  color: #505f79;
 }
 
 .fa-brands,
@@ -79,17 +95,13 @@ ul.nav li {
   flex-basis: 1.5em;
 }
 
-.purple-icon {
+.purple {
   color: #7f8cff;
 }
 
 @media screen and (min-width: 768px) {
   .menu-icon {
     display: none;
-  }
-
-  .real-content {
-    max-width: 45%;
   }
 
   .nav {
