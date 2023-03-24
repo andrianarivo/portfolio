@@ -35,7 +35,6 @@ body {
   background-position: center center;
   display: flex;
   padding: 0 1.5em;
-  display: flex;
   justify-content: center;
   flex-grow: 1;
 }
