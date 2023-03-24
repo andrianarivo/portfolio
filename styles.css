@@ -46,7 +46,7 @@ body {
   flex-basis: 60%;
 }
 
-.nav ul li {
+ul.nav li {
   display: inline;
   flex-basis: 7em;
   flex-shrink: 0;
@@ -54,7 +54,7 @@ body {
   font-weight: 500;
 }
 
-.nav ul {
+ul.nav {
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -62,7 +62,7 @@ body {
 
 .logo {
   font-weight: bold;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .app-bar {
@@ -103,7 +103,7 @@ ul.icons li a {
     display: none;
   }
 
-  .nav {
+  nav {
     padding-right: 10%;
   }
 
@@ -117,7 +117,7 @@ ul.icons li a {
     background-image: url('background_mobile.svg');
   }
 
-  .nav {
+  ul.nav {
     display: none;
   }
 
