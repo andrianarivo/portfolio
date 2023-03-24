@@ -16,7 +16,7 @@ body {
 .h1 {
   font-size: 2.5rem;
   line-height: 80%;
-  font-weight: bold;
+  font-weight: 700;
   color: #172b4d;
 }
 
@@ -40,6 +40,7 @@ body {
   display: flex;
   padding: 0 1.5em;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -47,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 60%;
+  max-width: 70%;
 }
 
 ul.nav li {
@@ -65,11 +66,12 @@ ul.nav {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .app-bar {
+  padding-top: 0.5em;
   align-items: center;
   position: fixed;
   display: flex;
@@ -102,10 +104,18 @@ ul.icons li a {
   color: #7f8cff;
 }
 
+.dark-purple {
+  color: #6070ff;
+}
+
 .projects {
   display: grid;
   grid-template-columns: auto;
   height: 100%;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,7 +142,7 @@ ul.icons li a {
   }
 
   .logo {
-    padding-left: 2.5em;
+    padding-left: 1.5em;
   }
 
   .menu-icon {
@@ -144,4 +154,89 @@ ul.icons li a {
   .headline {
     background-image: none;
   }
+}
+
+.about-me {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 5em;
+}
+
+.about-me .h1 {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
+.about-me .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+}
+
+.get-resume {
+  font-family: 'Poppins', sans-serif;
+  outline: inherit;
+  height: 3.25em;
+  font-weight: 500;
+  border-width: 0.1em;
+  border-radius: 0.75em;
+  border-color: #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  align-self: flex-start;
+  margin: 1.5em 0;
+}
+
+ul.tools {
+  margin: 0;
+  padding: 0 2.5em;
+  align-self: stretch;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+ul.tools li {
+  display: inline;
+}
+
+.tools-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.language-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  background-color: #f7f7f9;
+  border-radius: 0.6em;
+  margin: 1em 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 1.5em;
+}
+
+.language-item p {
+  margin-left: 1em;
+}
+
+.language-item img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tools-languages {
+  margin: 0;
+  padding: 0;
 }
