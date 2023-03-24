@@ -9,6 +9,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.container {
+  height: 100%;
+}
+
 .h1 {
   font-size: 2.5rem;
   line-height: 80%;
@@ -28,7 +32,7 @@ body {
   border-bottom-left-radius: 5em;
 }
 
-.headline-content {
+.headline {
   background-image: url('background.svg');
   background-size: 100% 80%;
   background-repeat: no-repeat;
@@ -36,14 +40,15 @@ body {
   display: flex;
   padding: 0 1.5em;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
-.headline-description {
+.headline .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 60%;
+  max-width: 60%;
 }
 
 ul.nav li {
@@ -119,7 +124,7 @@ ul.icons li a {
 }
 
 @media screen and (max-width: 768px) {
-  .headline-content {
+  .headline {
     background-image: url('background_mobile.svg');
   }
 
@@ -137,7 +142,7 @@ ul.icons li a {
 }
 
 @media screen and (max-width: 375px) {
-  .headline-content {
+  .headline {
     background-image: none;
   }
 }
