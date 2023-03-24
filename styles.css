@@ -40,7 +40,6 @@ body {
   display: flex;
   padding: 0 1.5em;
   justify-content: center;
-  align-items: center;
   flex-grow: 1;
 }
 
