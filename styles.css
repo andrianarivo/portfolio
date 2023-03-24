@@ -1,0 +1,137 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  line-height: 80%;
+  font-weight: bold;
+  color: #172b4d;
+}
+
+.link {
+  font-weight: 500;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  border-bottom-left-radius: 5em;
+}
+
+.content {
+  background-image: url('background.svg');
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  padding: 0 1.5em;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+ul.nav li {
+  display: inline;
+  flex-basis: 7em;
+  flex-shrink: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+ul.nav {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.app-bar {
+  align-items: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul.icons li {
+  display: inline;
+  flex-basis: 2em;
+  text-align: center;
+}
+
+ul.icons li a {
+  color: #505f79;
+}
+
+.fa-brands,
+.fa-regular {
+  flex-basis: 1.5em;
+}
+
+.purple {
+  color: #7f8cff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  nav {
+    padding-right: 10%;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    background-image: url('background_mobile.svg');
+  }
+
+  ul.nav {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 2.5em;
+  }
+
+  .menu-icon {
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    background-image: none;
+  }
+}
