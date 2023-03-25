@@ -7,43 +7,39 @@ body {
   height: 100%;
   margin: 0;
   background-color: #e5e5e5;
+  color: #344563;
+}
+
+.container {
+  height: 100%;
 }
 
 .h1 {
   font-size: 2.5rem;
   line-height: 80%;
-  font-weight: bold;
   color: #172b4d;
 }
 
-.link {
-  font-weight: 500;
-}
-
-.container {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 95%;
-  border-bottom-left-radius: 5em;
-}
-
-.content {
-  background-image: url('background.svg');
+.headline {
+  background-image: url('images/background.svg');
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #fff;
+  height: 95%;
+  border-bottom-left-radius: 5em;
   display: flex;
   padding: 0 1.5em;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
-.description {
+.headline .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 60%;
+  max-width: 70%;
 }
 
 ul.nav li {
@@ -51,7 +47,6 @@ ul.nav li {
   flex-basis: 7em;
   flex-shrink: 0;
   text-align: center;
-  font-weight: 500;
 }
 
 ul.nav {
@@ -61,11 +56,11 @@ ul.nav {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .app-bar {
+  margin-top: 1em;
   align-items: center;
   position: fixed;
   display: flex;
@@ -98,6 +93,14 @@ ul.icons li a {
   color: #7f8cff;
 }
 
+.dark-purple {
+  color: #6070ff;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 768px) {
   .menu-icon {
     display: none;
@@ -113,8 +116,8 @@ ul.icons li a {
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    background-image: url('background_mobile.svg');
+  .headline {
+    background-image: url('images/background_mobile.svg');
   }
 
   ul.nav {
@@ -122,7 +125,7 @@ ul.icons li a {
   }
 
   .logo {
-    padding-left: 2.5em;
+    padding-left: 1.5em;
   }
 
   .menu-icon {
@@ -131,7 +134,169 @@ ul.icons li a {
 }
 
 @media screen and (max-width: 375px) {
-  .content {
+  .headline {
     background-image: none;
   }
+}
+
+.about-me {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 5em;
+  margin-top: 7em;
+}
+
+.about-me .h1 {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
+.about-me .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+}
+
+.button-outlined {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  outline: inherit;
+  height: 3.25em;
+  border: 0.1em solid #6070ff;
+  border-radius: 0.75em;
+  color: #396df2;
+  background-color: #fff;
+  align-self: flex-start;
+  margin: 1.5em 0;
+  padding: 0 1em;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+ul.tools {
+  margin: 0;
+  padding: 0 2.5em;
+  align-self: stretch;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+ul.tools li {
+  display: inline;
+}
+
+.tools-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.tools-item-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  background-color: #f7f7f9;
+  border-radius: 0.6em;
+  margin: 1em 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 1.5em;
+}
+
+.tools-item-detail p {
+  margin-left: 1em;
+}
+
+.tools-item-detail img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tools-item {
+  margin: 0;
+  padding: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 0.6em;
+  margin-top: 7em;
+  padding: 1em;
+}
+
+.project-item * {
+  margin: 0.2em 0;
+}
+
+ul.captions {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul.captions li {
+  display: inline;
+}
+
+.counter {
+  display: inline-block;
+  background-image: url('images/counter.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.5em;
+  height: 0.5em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.light-grey {
+  color: #7a869a;
+}
+
+ul.project-language {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.3em;
+}
+
+ul.project-language li {
+  display: inline;
+  background-color: #ebebff;
+  margin-right: 0.5em;
+  padding: 0 1em;
+  border-radius: 0.5em;
 }
