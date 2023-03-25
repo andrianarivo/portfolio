@@ -60,7 +60,8 @@ ul.nav {
 }
 
 .app-bar {
-  margin-top: 1em;
+  padding: 0.5em 0;
+  background-color: #fff;
   align-items: center;
   position: fixed;
   display: flex;
