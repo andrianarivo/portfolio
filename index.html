@@ -30,14 +30,14 @@
   <body>
     <div class="container">
       <header class="app-bar">
-        <div class="logo dark-purple">
+        <div class="logo bold dark-purple">
           <a>My Logo</a>
         </div>
         <nav>
           <ul class="nav">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li class="medium">Portfolio</li>
+            <li class="medium">About</li>
+            <li class="medium">Contact</li>
           </ul>
           <div class="menu-icon dark-purple">
             <i class="fas fa-bars purple-icon"></i>
@@ -46,14 +46,14 @@
       </header>
       <section class="headline">
         <div class="description">
-          <h1 class="h1">I'm David. Glad to see you!</h1>
+          <h1 class="h1 bold">I'm David. Glad to see you!</h1>
           <p>
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hesitate to
             contact me.
           </p>
-          <p class="link purple">LET'S CONNECT</p>
+          <p class="medium purple">LET'S CONNECT</p>
           <ul class="icons">
             <li>
               <a href="https://twitter.com/DAndrianarivo"
@@ -81,27 +81,122 @@
       </section>
 
       <section class="projects">
-        <div
-          style="background-color: aquamarine; width: 100px; height: 100px"
-        ></div>
-        <div
-          style="background-color: burlywood; width: 100px; height: 100px"
-        ></div>
-        <div
-          style="background-color: hotpink; width: 100px; height: 100px"
-        ></div>
+        <div class="project-item">
+          <img
+            src="images/project1_snapshot.png"
+            alt="project1"
+            width="295"
+            height="220"
+          />
+          <h3 class="h1 bold">Tonic</h3>
+          <div class="captions">
+            <p class="bold">CANOPY</p>
+            <span></span>
+            <p class="medium light-grey">Back End Dev</p>
+            <span></span>
+            <p class="medium light-grey">2015</p>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-language">
+            <li class="medium dark-purple">HTML</li>
+            <li class="medium dark-purple">CSS</li>
+            <li class="medium dark-purple">JS</li>
+          </ul>
+          <button class="button-outlined medium">See project</button>
+        </div>
+        <div class="project-item">
+          <img
+            src="images/project2_snapshot.png"
+            alt="project1"
+            width="295"
+            height="220"
+          />
+          <h3 class="h1 bold">Multi-Post Stories</h3>
+          <div class="captions">
+            <p class="bold">CANOPY</p>
+            <span></span>
+            <p class="medium light-grey">Back End Dev</p>
+            <span></span>
+            <p class="medium light-grey">2015</p>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-language">
+            <li class="medium dark-purple">HTML</li>
+            <li class="medium dark-purple">CSS</li>
+            <li class="medium dark-purple">JS</li>
+          </ul>
+          <button class="button-outlined medium">See project</button>
+        </div>
+        <div class="project-item">
+          <img
+            src="images/project3_snapshot.png"
+            alt="project1"
+            width="295"
+            height="220"
+          />
+          <h3 class="h1 bold">Tonic</h3>
+          <div class="captions">
+            <p class="bold">CANOPY</p>
+            <span></span>
+            <p class="medium light-grey">Back End Dev</p>
+            <span></span>
+            <p class="medium light-grey">2015</p>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-language">
+            <li class="medium dark-purple">HTML</li>
+            <li class="medium dark-purple">CSS</li>
+            <li class="medium dark-purple">JS</li>
+          </ul>
+          <button class="button-outlined medium">See project</button>
+        </div>
+        <div class="project-item">
+          <img
+            src="images/project4_snapshot.png"
+            alt="project1"
+            width="295"
+            height="220"
+          />
+          <h3 class="h1 bold">Multi-Post Stories</h3>
+          <div class="captions">
+            <p class="bold">CANOPY</p>
+            <span></span>
+            <p class="medium light-grey">Back End Dev</p>
+            <span></span>
+            <p class="medium light-grey">2015</p>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-language">
+            <li class="medium dark-purple">HTML</li>
+            <li class="medium dark-purple">CSS</li>
+            <li class="medium dark-purple">JS</li>
+          </ul>
+          <button class="button-outlined medium">See project</button>
+        </div>
       </section>
 
       <section class="about-me">
         <div class="description">
-          <h3 class="h1">About Myself</h3>
+          <h3 class="h1 bold">About Myself</h3>
           <p>
             Hello I’m a software developer! I can help you build a product ,
             feature or website. Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
             hesitate to contact me.
           </p>
-          <p class="link purple">LET'S CONNECT</p>
+          <p class="medium purple">LET'S CONNECT</p>
           <ul class="icons">
             <li>
               <a href="https://twitter.com/DAndrianarivo"
@@ -125,7 +220,7 @@
               ></a>
             </li>
           </ul>
-          <button class="get-resume">Get my resume</button>
+          <button class="button-outlined medium">Get my resume</button>
         </div>
 
         <ul class="tools">
@@ -135,9 +230,20 @@
                 <h5>Languages</h5>
                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
               </div>
-              <ul class="tools-languages">
+              <ul class="tools-item">
                 <li>
-                  <div class="language-item">
+                  <div class="tools-item-detail">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                      alt="javascript"
+                      width="48"
+                      height="48"
+                    />
+                    <p>Javascript</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tools-item-detail">
                     <img
                       src="https://armyyazilim.com/wp-content/uploads/2019/10/css.png"
                       alt="css3"
@@ -148,7 +254,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="language-item">
+                  <div class="tools-item-detail">
                     <img
                       src="https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html5-logo-for-web-development.png"
                       alt="html5"
@@ -156,17 +262,6 @@
                       height="48"
                     />
                     <p>CSS</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="language-item">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
-                      alt="javascript"
-                      width="48"
-                      height="48"
-                    />
-                    <p>Javascript</p>
                   </div>
                 </li>
               </ul>
