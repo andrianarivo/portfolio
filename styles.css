@@ -21,18 +21,13 @@ body {
 }
 
 .headline {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 95%;
-  border-bottom-left-radius: 5em;
-}
-
-.headline {
   background-image: url('images/background.svg');
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #fff;
+  height: 95%;
+  border-bottom-left-radius: 5em;
   display: flex;
   padding: 0 1.5em;
   justify-content: center;
