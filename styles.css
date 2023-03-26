@@ -21,7 +21,7 @@ body {
 }
 
 .headline {
-  background-image: url('images/background.svg');
+  background-image: url('images/background_mobile.svg');
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,6 +42,10 @@ body {
   max-width: 70%;
 }
 
+ul.nav {
+  display: none;
+}
+
 ul.nav li {
   display: inline;
   flex-basis: 7em;
@@ -49,13 +53,8 @@ ul.nav li {
   text-align: center;
 }
 
-ul.nav {
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo {
+  padding-left: 1.5em;
   font-size: 1.2rem;
 }
 
@@ -99,45 +98,8 @@ ul.icons li a {
 }
 
 .menu-icon {
+  padding-right: 1.5em;
   font-size: 1.2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
-
-  nav {
-    padding-right: 10%;
-  }
-
-  .logo {
-    padding-left: 10%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .headline {
-    background-image: url('images/background_mobile.svg');
-  }
-
-  ul.nav {
-    display: none;
-  }
-
-  .logo {
-    padding-left: 1.5em;
-  }
-
-  .menu-icon {
-    padding-right: 1.5em;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .headline {
-    background-image: none;
-  }
 }
 
 .about-me {
@@ -312,7 +274,7 @@ ul.project-language li {
 }
 
 .contact-me .content {
-  background-image: url('images/contact_me_bg.svg');
+  background-image: url('images/contact_me_mobile.svg');
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
@@ -330,17 +292,22 @@ ul.project-language li {
   margin-bottom: 0;
 }
 
-.contact-me .content p.text-white {
-  max-width: 80%;
-  font-size: 1.1em;
-  text-align: center;
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.contact-me .form {
+.form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  flex-basis: 40%;
   justify-content: space-between;
+}
+
+.form-textarea {
+  resize: none;
+  height: 9em;
 }
 
 .button-filled-white {
@@ -393,4 +360,60 @@ ul.project-language li {
 .form .button-filled-white {
   margin-top: 1.3em;
   align-self: flex-start;
+}
+
+.contact-me .content .description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.contact-me .content .description p.text-white {
+  flex-basis: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background-image: url('images/background.svg');
+  }
+
+  ul.nav {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  nav {
+    padding-right: 10%;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+
+  .contact-me .content {
+    background-image: url('images/contact_me.svg');
+    background-position: center center;
+    background-size: contain;
+    padding: 5%;
+  }
+
+  .form .button-filled-white {
+    align-self: center;
+  }
+
+  .input {
+    border-radius: 0.05em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headline {
+    background-image: none;
+  }
 }
