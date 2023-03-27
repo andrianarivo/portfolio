@@ -235,10 +235,6 @@ ul.tools li {
 }
 
 .project-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   background-color: #fff;
   border-radius: 0.6em;
   margin-top: 7em;
@@ -287,7 +283,7 @@ ul.captions li {
 
 ul.project-language {
   padding: 0;
-  display: flex;
+  float: left;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 1.3em;
