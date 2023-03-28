@@ -369,6 +369,11 @@ ul.project-language li {
   font-family: 'Poppins', sans-serif;
 }
 
+.textarea {
+  resize: none;
+  min-height: 10em;
+}
+
 .form .button-filled-white {
   margin-top: 1.3em;
   align-self: flex-start;

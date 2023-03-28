@@ -293,11 +293,16 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it!
           </p>
-          <form class="form" method="post">
+          <form
+            class="form"
+            action="https://formspree.io/f/mbjezrpn"
+            method="post"
+          >
             <input
               class="input text-medium"
               type="text"
               name="name"
+              maxlength="30"
               placeholder="Name"
               required
             />
@@ -309,9 +314,10 @@
               required
             />
             <textarea
-              class="input"
+              class="textarea input"
               name="message"
               placeholder="Write your message here"
+              maxlength="500"
               required
             ></textarea>
             <input
