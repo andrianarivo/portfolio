@@ -351,12 +351,28 @@ ul.project-language li {
   height: 3.25em;
   border: 0.1em solid #6070ff;
   border-radius: 0.75em;
-  color: #6070ff;
-  background-color: #fff;
   margin: 1.5em 0;
   padding: 0 1em;
   font-size: 1.1rem;
   text-decoration: none;
+  color: #6070ff;
+  background-color: #fff;
+}
+
+.button-filled-white:disabled {
+  border-color: #c1c7d0;
+  color: #5e6c84;
+  background-color: #fff;
+}
+
+.button-filled-white:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.button-filled-white:active {
+  color: #fff;
+  background-color: #2230d2;
 }
 
 .input {
