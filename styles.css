@@ -60,7 +60,8 @@ ul.nav {
 }
 
 .app-bar {
-  margin-top: 1em;
+  padding: 0.5em 0;
+  background-color: #fff;
   align-items: center;
   position: fixed;
   display: flex;
@@ -89,11 +90,11 @@ ul.icons li a {
   flex-basis: 1.5em;
 }
 
-.purple {
+.text-purple {
   color: #7f8cff;
 }
 
-.dark-purple {
+.text-dark-purple {
   color: #6070ff;
 }
 
@@ -146,6 +147,7 @@ ul.icons li a {
   align-items: center;
   border-top-right-radius: 5em;
   margin-top: 7em;
+  padding-bottom: 10.5em;
 }
 
 .about-me .h1 {
@@ -269,19 +271,19 @@ ul.captions li {
   height: 0.5em;
 }
 
-.bold {
+.text-bold {
   font-weight: 700;
 }
 
-.medium {
+.text-medium {
   font-weight: 500;
 }
 
-.regular {
+.text-regular {
   font-weight: 400;
 }
 
-.light-grey {
+.text-light-grey {
   color: #7a869a;
 }
 
@@ -299,4 +301,96 @@ ul.project-language li {
   margin-right: 0.5em;
   padding: 0 1em;
   border-radius: 0.5em;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.contact-me {
+  background-color: #fff;
+}
+
+.contact-me .content {
+  background-image: url('images/contact_me_bg.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  height: 100%;
+  background-color: #6070ff;
+  border-top-left-radius: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me .content .h1 {
+  margin-top: 2.6em;
+  margin-bottom: 0;
+}
+
+.contact-me .content p.text-white {
+  max-width: 80%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.contact-me .form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.button-filled-white {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  outline: inherit;
+  height: 3.25em;
+  border: 0.1em solid #6070ff;
+  border-radius: 0.75em;
+  margin: 1.5em 0;
+  padding: 0 1em;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #6070ff;
+  background-color: #fff;
+}
+
+.button-filled-white:disabled {
+  border-color: #c1c7d0;
+  color: #5e6c84;
+  background-color: #fff;
+}
+
+.button-filled-white:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.button-filled-white:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.input {
+  font-size: 1.1rem;
+  padding: 0.7em;
+  margin-top: 1.3em;
+  border: 0.1em solid #6070ff;
+  border-radius: 0.75em;
+  min-height: 1.6em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.textarea {
+  resize: none;
+  min-height: 10em;
+}
+
+.form .button-filled-white {
+  margin-top: 1.3em;
+  align-self: flex-start;
 }
