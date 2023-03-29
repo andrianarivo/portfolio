@@ -60,13 +60,13 @@ ul.nav li {
 
 .app-bar {
   padding: 0.5em 0;
-  border-bottom-left-radius: 5em;
   background-color: #fff;
   align-items: center;
   position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  box-shadow: 1px 0 #7a869a;
 }
 
 .icons {
@@ -289,36 +289,36 @@ ul.project-language li {
   background-color: #fff;
 }
 
-.contact-me .content {
+.contact-me .content-background {
   background-image: url('images/contact_me_mobile.svg');
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
   height: 100%;
+  display: flex;
   background-color: #6070ff;
   border-top-left-radius: 5em;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact-me .content .h1 {
-  margin-top: 2.6em;
-  margin-bottom: 0;
+.contact-me .content-background .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.contact-me .content-background .content .h1 {
+  margin-top: 2.6em;
+  margin-bottom: 0;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  flex-basis: 40%;
   justify-content: space-between;
+  width: 80%;
 }
 
 .form-textarea {
@@ -342,12 +342,6 @@ ul.project-language li {
   background-color: #fff;
 }
 
-.button-filled-white:disabled {
-  border-color: #c1c7d0;
-  color: #5e6c84;
-  background-color: #fff;
-}
-
 .button-filled-white:hover {
   color: #fff;
   background-color: #6070ff;
@@ -356,6 +350,12 @@ ul.project-language li {
 .button-filled-white:active {
   color: #fff;
   background-color: #2230d2;
+}
+
+.button-filled-white:disabled {
+  border-color: #c1c7d0;
+  color: #5e6c84;
+  background-color: #fff;
 }
 
 .input {
@@ -378,15 +378,12 @@ ul.project-language li {
   align-self: flex-start;
 }
 
-.contact-me .content .description {
+.contact-me .content-background .content .description {
   display: flex;
   justify-content: center;
   font-size: 1.1em;
   text-align: center;
-}
-
-.contact-me .content .description p.text-white {
-  flex-basis: 60%;
+  max-width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -412,15 +409,23 @@ ul.project-language li {
     padding-left: 10%;
   }
 
-  .contact-me .content {
+  .contact-me .content-background {
     background-image: url('images/contact_me.svg');
     background-position: center center;
     background-size: contain;
-    padding: 5%;
+    padding: 5em;
+  }
+
+  .contact-me .content-background .content .description {
+    width: 60%;
   }
 
   .form .button-filled-white {
     align-self: center;
+  }
+
+  .form {
+    width: 60%;
   }
 
   .input {
@@ -433,11 +438,11 @@ ul.project-language li {
     max-width: 80%;
   }
 
-  .about-me .content .description {
+  .about-me .content-background .content .description {
     flex: 1;
   }
 
-  .about-me .content .technologies {
+  .about-me .content-background .content .technologies {
     flex: 2;
   }
 
