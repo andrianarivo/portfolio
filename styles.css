@@ -60,6 +60,7 @@ ul.nav li {
 
 .app-bar {
   padding: 0.5em 0;
+  border-bottom-left-radius: 5em;
   background-color: #fff;
   align-items: center;
   position: fixed;
@@ -117,11 +118,24 @@ ul.icons li a {
   margin-bottom: 0;
 }
 
-.about-me .description {
+.about-me .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.about-me .content .description {
+  display: flex;
+  flex-direction: column;
   max-width: 70%;
+}
+
+.about-me .content .technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .button-outlined {
@@ -171,7 +185,7 @@ ul.tools li {
   font-weight: 500;
   background-color: #f7f7f9;
   border-radius: 0.6em;
-  margin: 1em 0;
+  margin-bottom: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-right: 0.5em;
@@ -188,6 +202,8 @@ ul.tools li {
 }
 
 .tools-item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -409,6 +425,39 @@ ul.project-language li {
 
   .input {
     border-radius: 0.05em;
+  }
+
+  .about-me .content {
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 80%;
+  }
+
+  .about-me .content .description {
+    flex: 1;
+  }
+
+  .about-me .content .technologies {
+    flex: 2;
+  }
+
+  .tools-item {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .tools-item-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 6.5em;
+    height: 6.5em;
+    padding: 0.5em;
+    margin-right: 1em;
+  }
+
+  .tools-item-detail p {
+    text-align: start;
+    margin-left: 0;
   }
 }
 
