@@ -268,7 +268,7 @@ ul.captions li {
 ul.project-language {
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.3em;
 }
@@ -326,33 +326,17 @@ ul.project-language li {
   height: 9em;
 }
 
-.button-filled-white {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  outline: inherit;
-  height: 3.25em;
-  border: 0.1em solid #6070ff;
-  border-radius: 0.75em;
-  margin: 1.5em 0;
-  padding: 0 1em;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #6070ff;
-  background-color: #fff;
-}
-
-.button-filled-white:hover {
+.button-outlined:hover {
   color: #fff;
   background-color: #6070ff;
 }
 
-.button-filled-white:active {
+.button-outlined:active {
   color: #fff;
   background-color: #2230d2;
 }
 
-.button-filled-white:disabled {
+.button-outlined:disabled {
   border-color: #c1c7d0;
   color: #5e6c84;
   background-color: #fff;
@@ -373,7 +357,7 @@ ul.project-language li {
   min-height: 10em;
 }
 
-.form .button-filled-white {
+.form .button-outlined {
   margin-top: 1.3em;
   align-self: flex-start;
 }
@@ -420,7 +404,7 @@ ul.project-language li {
     width: 60%;
   }
 
-  .form .button-filled-white {
+  .form .button-outlined {
     align-self: center;
   }
 
@@ -463,6 +447,38 @@ ul.project-language li {
   .tools-item-detail p {
     text-align: start;
     margin-left: 0;
+  }
+
+  .projects {
+    grid-template-columns: auto;
+  }
+
+  .project-item {
+    flex-direction: row;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-item .content {
+    margin-left: 2.5em;
+  }
+
+  .project-item .content * {
+    margin: 0.5em 0;
+  }
+
+  .project-item .content .button-outlined {
+    margin-top: 1.3em;
+  }
+
+  ul.project-language li.text-medium {
+    margin-right: 0.5em;
+  }
+
+  .project-item img {
+    width: 34em;
+    height: 28em;
   }
 }
 
