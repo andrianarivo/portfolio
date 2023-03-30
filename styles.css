@@ -460,8 +460,12 @@ ul.project-language li {
     margin-right: auto;
   }
 
+  .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   .project-item .content {
-    margin-left: 2.5em;
+    margin: 0 1.5em;
   }
 
   .project-item .content * {
