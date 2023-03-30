@@ -61,12 +61,15 @@ ul.nav li {
 }
 
 @keyframes change {
-  from {
+  0% {
     color: rgb(144, 124, 124);
   }
 
-  to {
+  50% {
     color: rgb(210, 205, 205);
+  }
+  100% {
+    color: green;
   }
 }
 
