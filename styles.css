@@ -21,7 +21,7 @@ body {
 }
 
 .headline {
-  background-image: url('images/background.svg');
+  background-image: url('images/background_mobile.svg');
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,6 +42,10 @@ body {
   max-width: 70%;
 }
 
+ul.nav {
+  display: none;
+}
+
 ul.nav li {
   display: inline;
   flex-basis: 7em;
@@ -49,13 +53,8 @@ ul.nav li {
   text-align: center;
 }
 
-ul.nav {
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo {
+  padding-left: 1.5em;
   font-size: 1.2rem;
 }
 
@@ -67,6 +66,7 @@ ul.nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  box-shadow: 1px 0 #7a869a;
 }
 
 .icons {
@@ -99,45 +99,8 @@ ul.icons li a {
 }
 
 .menu-icon {
+  padding-right: 1.5em;
   font-size: 1.2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
-
-  nav {
-    padding-right: 10%;
-  }
-
-  .logo {
-    padding-left: 10%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .headline {
-    background-image: url('images/background_mobile.svg');
-  }
-
-  ul.nav {
-    display: none;
-  }
-
-  .logo {
-    padding-left: 1.5em;
-  }
-
-  .menu-icon {
-    padding-right: 1.5em;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .headline {
-    background-image: none;
-  }
 }
 
 .about-me {
@@ -155,11 +118,24 @@ ul.icons li a {
   margin-bottom: 0;
 }
 
-.about-me .description {
+.about-me .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.about-me .content .description {
+  display: flex;
+  flex-direction: column;
   max-width: 70%;
+}
+
+.about-me .content .technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .button-outlined {
@@ -209,7 +185,7 @@ ul.tools li {
   font-weight: 500;
   background-color: #f7f7f9;
   border-radius: 0.6em;
-  margin: 1em 0;
+  margin-bottom: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-right: 0.5em;
@@ -226,6 +202,8 @@ ul.tools li {
 }
 
 .tools-item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -290,7 +268,7 @@ ul.captions li {
 ul.project-language {
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.3em;
 }
@@ -311,68 +289,57 @@ ul.project-language li {
   background-color: #fff;
 }
 
-.contact-me .content {
-  background-image: url('images/contact_me_bg.svg');
+.contact-me .content-background {
+  background-image: url('images/contact_me_mobile.svg');
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
   height: 100%;
+  display: flex;
   background-color: #6070ff;
   border-top-left-radius: 5em;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact-me .content .h1 {
+.contact-me .content-background .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me .content-background .content .h1 {
   margin-top: 2.6em;
   margin-bottom: 0;
 }
 
-.contact-me .content p.text-white {
-  max-width: 80%;
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.contact-me .form {
+.form {
   display: flex;
   flex-direction: column;
-  width: 80%;
   justify-content: space-between;
+  width: 80%;
 }
 
-.button-filled-white {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  outline: inherit;
-  height: 3.25em;
-  border: 0.1em solid #6070ff;
-  border-radius: 0.75em;
-  margin: 1.5em 0;
-  padding: 0 1em;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #6070ff;
-  background-color: #fff;
+.form-textarea {
+  resize: none;
+  height: 9em;
 }
 
-.button-filled-white:disabled {
-  border-color: #c1c7d0;
-  color: #5e6c84;
-  background-color: #fff;
-}
-
-.button-filled-white:hover {
+.button-outlined:hover {
   color: #fff;
   background-color: #6070ff;
 }
 
-.button-filled-white:active {
+.button-outlined:active {
   color: #fff;
   background-color: #2230d2;
+}
+
+.button-outlined:disabled {
+  border-color: #c1c7d0;
+  color: #5e6c84;
+  background-color: #fff;
 }
 
 .input {
@@ -390,7 +357,137 @@ ul.project-language li {
   min-height: 10em;
 }
 
-.form .button-filled-white {
+.form .button-outlined {
   margin-top: 1.3em;
   align-self: flex-start;
+}
+
+.contact-me .content-background .content .description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background-image: url('images/background.svg');
+  }
+
+  ul.nav {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  nav {
+    padding-right: 10%;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+
+  .contact-me .content-background {
+    background-image: url('images/contact_me.svg');
+    background-position: center center;
+    background-size: contain;
+    padding: 5em;
+  }
+
+  .contact-me .content-background .content .description {
+    width: 60%;
+  }
+
+  .form .button-outlined {
+    align-self: center;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  .input {
+    border-radius: 0.05em;
+  }
+
+  .about-me .content {
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 80%;
+  }
+
+  .about-me .content-background .content .description {
+    flex: 1;
+  }
+
+  .about-me .content-background .content .technologies {
+    flex: 2;
+  }
+
+  .tools-item {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .tools-item-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 6.5em;
+    height: 6.5em;
+    padding: 0.5em;
+    margin-right: 1em;
+  }
+
+  .tools-item-detail p {
+    text-align: start;
+    margin-left: 0;
+  }
+
+  .projects {
+    grid-template-columns: auto;
+  }
+
+  .project-item {
+    flex-direction: row;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .project-item .content {
+    margin: 0 1.5em;
+  }
+
+  .project-item .content * {
+    margin: 0.5em 0;
+  }
+
+  .project-item .content .button-outlined {
+    margin-top: 1.3em;
+  }
+
+  ul.project-language li.text-medium {
+    margin-right: 0.5em;
+  }
+
+  .project-item img {
+    width: 34em;
+    height: 28em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headline {
+    background-image: none;
+  }
 }
