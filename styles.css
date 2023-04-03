@@ -362,6 +362,14 @@ ul.project-language li {
   align-self: flex-start;
 }
 
+.form .button-outlined:hover {
+  border: 1px solid #fff;
+}
+
+.form .button-outlined:active {
+  border: 1px solid #fff;
+}
+
 .contact-me .content-background .content .description {
   display: flex;
   justify-content: center;
@@ -455,9 +463,6 @@ ul.project-language li {
 
   .project-item {
     flex-direction: row;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .project-item:nth-child(even) {
