@@ -10,6 +10,10 @@ body {
   color: #344563;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .container {
   height: 100%;
 }
