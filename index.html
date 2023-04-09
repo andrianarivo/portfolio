@@ -34,12 +34,21 @@
           <a>My Logo</a>
         </div>
         <nav>
-          <ul class="nav">
-            <li class="text-medium">Portfolio</li>
-            <li class="text-medium">About</li>
-            <li class="text-medium">Contact</li>
-          </ul>
-          <div class="menu-icon text-dark-purple">
+          <div id="mobile-menu" class="nav">
+            <i id="close-menu" class="fa-solid fa-xmark"></i>
+            <ul>
+              <li class="text-medium">
+                <a class="menu-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="text-medium">
+                <a class="menu-link" href="#about">About</a>
+              </li>
+              <li class="text-medium">
+                <a class="menu-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="open-menu" class="menu-icon text-dark-purple">
             <i class="fas fa-bars purple-icon"></i>
           </div>
         </nav>
@@ -87,7 +96,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="portfolio" class="projects">
         <div class="project-item">
           <img
             src="images/project1_snapshot.png"
@@ -202,7 +211,7 @@
         </div>
       </section>
 
-      <section class="about-me">
+      <section id="about" class="about-me">
         <div class="content" role="region" aria-label="About myself content">
           <div class="description">
             <h3 class="h1 text-bold">About Myself</h3>
@@ -310,7 +319,8 @@
           </div>
         </div>
       </section>
-      <section class="contact-me">
+
+      <section id="contact" class="contact-me">
         <div class="content-background">
           <div class="content" role="region" aria-label="Contact me form">
             <h3 class="h1 text-bold text-white">Contact me</h3>
@@ -358,5 +368,6 @@
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
