@@ -137,9 +137,6 @@ ul.icons li a {
   color: #6070ff;
 }
 
-.menu {
-}
-
 .menu -icon {
   padding-right: 1.5em;
   font-size: 1.2rem;
@@ -425,10 +422,30 @@ ul.project-language li {
     background-image: url('images/background.svg');
   }
 
-  ul.nav {
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
+  .nav {
+    visibility: visible;
+    position: inherit;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+  }
+
+  .nav ul {
+    flex-direction: row;
+  }
+
+  .nav ul li {
+    font-size: 1rem;
+    flex-basis: 7em;
+    font-weight: 500;
+  }
+
+  .nav ul li a {
+    color: #344563;
+  }
+
+  i.fa-solid.fa-xmark {
+    display: none;
   }
 
   .menu-icon {
@@ -436,7 +453,7 @@ ul.project-language li {
   }
 
   nav {
-    padding-right: 10%;
+    padding-right: 15%;
   }
 
   .logo {

@@ -1,12 +1,26 @@
 let openMenu = document.querySelector('div#open-menu');
 let mobileMenu = document.querySelector('div#mobile-menu');
 
+const isOnMobile = () => {
+  return screen.width < 768;
+};
+
+window.addEventListener('resize', () => {
+  hideMenu();
+});
+
 const hideMenu = () => {
-  mobileMenu.style.visibility = 'hidden';
+  if (isOnMobile()) {
+    mobileMenu.style.visibility = 'hidden';
+  } else {
+    mobileMenu.style.visibility = 'visible';
+  }
 };
 
 const showMenu = () => {
-  mobileMenu.style.visibility = 'visible';
+  if (isOnMobile()) {
+    mobileMenu.style.visibility = 'visible';
+  }
 };
 
 openMenu.addEventListener('click', () => {
