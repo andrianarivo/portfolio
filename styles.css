@@ -479,6 +479,16 @@ ul.project-language li {
   align-self: center;
 }
 
+.form-validation-text {
+  color: #fff;
+  display: none;
+  font-weight: 500;
+}
+
+.form-validation-text i {
+  color: #ff0;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     background-image: url('images/background.svg');

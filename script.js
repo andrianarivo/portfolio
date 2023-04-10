@@ -190,3 +190,19 @@ const loadProjects = () => {
 document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
 });
+
+const contactForm = document.forms['contact-form'];
+
+const validateContactForm = () => {
+  const contactEmail = contactForm.email.value;
+  const formIsValid = contactEmail.toLowerCase() === contactEmail;
+  const formValidationText = document.querySelector('.form-validation-text');
+  if (formIsValid) {
+    formValidationText.style.display = 'none';
+  } else {
+    formValidationText.style.display = 'block';
+  }
+  return formIsValid;
+};
+
+contactForm.onsubmit = validateContactForm();
