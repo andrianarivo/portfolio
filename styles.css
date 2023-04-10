@@ -55,7 +55,6 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   visibility: hidden;
 }
@@ -86,10 +85,6 @@ i.fa-solid.fa-xmark {
 .nav ul li a {
   text-decoration: none;
   color: #fff;
-}
-
-.menu-icon {
-  padding-right: 1.5em;
 }
 
 .logo {
@@ -137,7 +132,7 @@ ul.icons li a {
   color: #6070ff;
 }
 
-.menu -icon {
+.menu-icon {
   padding-right: 1.5em;
   font-size: 1.2rem;
 }
