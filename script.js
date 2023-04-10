@@ -1,13 +1,7 @@
-let openMenu = document.querySelector('div#open-menu');
-let mobileMenu = document.querySelector('div#mobile-menu');
+const openMenu = document.querySelector('div#open-menu');
+const mobileMenu = document.querySelector('div#mobile-menu');
 
-const isOnMobile = () => {
-  return screen.width < 768;
-};
-
-window.addEventListener('resize', () => {
-  hideMenu();
-});
+const isOnMobile = () => window.screen.width < 768;
 
 const hideMenu = () => {
   if (isOnMobile()) {
@@ -23,18 +17,16 @@ const showMenu = () => {
   }
 };
 
-openMenu.addEventListener('click', () => {
-  showMenu();
-});
+window.addEventListener('resize', () => hideMenu());
 
-let closeMenu = document.querySelector('#close-menu');
+openMenu.addEventListener('click', () => showMenu());
 
-closeMenu.addEventListener('click', () => {
-  hideMenu();
-});
+const closeMenu = document.querySelector('#close-menu');
 
-let menuLinks = document.querySelectorAll('a.menu-link');
-for (let i = 0; i < menuLinks.length; i++) {
+closeMenu.addEventListener('click', () => hideMenu());
+
+const menuLinks = document.querySelectorAll('a.menu-link');
+for (let i = 0; i < menuLinks.length; i += 1) {
   menuLinks[i].addEventListener('click', () => {
     hideMenu();
   });
