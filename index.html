@@ -28,13 +28,18 @@
     <title>David's Portfolio</title>
   </head>
   <body>
-    <div class="container">
+    <div class="main">
       <header class="app-bar">
         <div class="logo text-bold text-dark-purple">
           <a>My Logo</a>
         </div>
         <nav>
-          <div id="mobile-menu" class="nav" role="region" aria-label="menu list">
+          <div
+            id="mobile-menu"
+            class="nav"
+            role="region"
+            aria-label="menu list"
+          >
             <i id="close-menu" class="fa-solid fa-xmark"></i>
             <ul>
               <li class="text-medium">
@@ -53,6 +58,59 @@
           </div>
         </nav>
       </header>
+
+      <section id="popup-window" class="popup-window">
+        <div class="popup-card">
+          <div class="card-title">
+            <h3 class="h1 text-bold">Tonic</h3>
+            <i id="close-popup-icon" class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="captions">
+            <li class="text-bold">CANOPY</li>
+            <li><span class="counter"></span></li>
+            <li class="text-medium text-light-grey">Back End Dev</li>
+            <li><span class="counter"></span></li>
+            <li class="text-medium text-light-grey">2015</li>
+          </ul>
+          <img
+            src="images/popup_window_thumbnail.png"
+            alt="project1"
+            width="311"
+            height="220"
+          />
+          <div class="card-content">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <div class="content-actions">
+              <ul class="project-language">
+                <li class="text-medium text-dark-purple">HTML</li>
+                <li class="text-medium text-dark-purple">CSS</li>
+                <li class="text-medium text-dark-purple">Javascript</li>
+              </ul>
+              <hr />
+              <div class="action-buttons">
+                <button type="button" class="button-outlined text-medium">
+                  See live
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-dark-purple"
+                  ></i>
+                </button>
+                <button type="button" class="button-outlined text-medium">
+                  See source
+                  <i class="fa-brands fa-github text-dark-purple"> </i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="headline">
         <div class="description" role="region" aria-label="Headline">
           <h1 class="h1 text-bold">I'm David. Glad to see you!</h1>
@@ -122,7 +180,9 @@
               <li class="text-medium text-dark-purple">CSS</li>
               <li class="text-medium text-dark-purple">JS</li>
             </ul>
-            <button class="button-outlined text-medium">See project</button>
+            <button type="button" class="button-outlined text-medium">
+              See project
+            </button>
           </div>
         </div>
         <div class="project-item">
@@ -150,7 +210,9 @@
               <li class="text-medium text-dark-purple">CSS</li>
               <li class="text-medium text-dark-purple">JS</li>
             </ul>
-            <button class="button-outlined text-medium">See project</button>
+            <button type="button" class="button-outlined text-medium">
+              See project
+            </button>
           </div>
         </div>
         <div class="project-item">
@@ -178,7 +240,9 @@
               <li class="text-medium text-dark-purple">CSS</li>
               <li class="text-medium text-dark-purple">JS</li>
             </ul>
-            <button class="button-outlined text-medium">See project</button>
+            <button type="button" class="button-outlined text-medium">
+              See project
+            </button>
           </div>
         </div>
         <div class="project-item">
@@ -206,7 +270,9 @@
               <li class="text-medium text-dark-purple">CSS</li>
               <li class="text-medium text-dark-purple">JS</li>
             </ul>
-            <button class="button-outlined text-medium">See project</button>
+            <button type="button" class="button-outlined text-medium">
+              See project
+            </button>
           </div>
         </div>
       </section>

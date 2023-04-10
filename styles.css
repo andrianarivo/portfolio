@@ -14,7 +14,7 @@ p {
   line-height: 1.5;
 }
 
-.container {
+.main {
   height: 100%;
 }
 
@@ -57,6 +57,7 @@ p {
   height: 100vh;
   flex-direction: column;
   visibility: hidden;
+  backdrop-filter: blur(5px);
 }
 
 .nav ul {
@@ -173,8 +174,6 @@ ul.icons li a {
 }
 
 .button-outlined {
-  display: flex;
-  align-items: center;
   font-family: 'Poppins', sans-serif;
   outline: inherit;
   height: 3.25em;
@@ -412,6 +411,50 @@ ul.project-language li {
   max-width: 80%;
 }
 
+.popup-window {
+  visibility: visible;
+  background-color: rgba(93, 99, 108, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.popup-card {
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 0 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-card .action-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-card .fa-solid.fa-xmark {
+  color: #67798e;
+  position: absolute;
+  right: 0;
+  top: 1.2em;
+}
+
+.popup-card img {
+  align-self: center;
+}
+
+.action-buttons .button-outlined {
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     background-image: url('images/background.svg');
@@ -437,10 +480,6 @@ ul.project-language li {
 
   .nav ul li a {
     color: #344563;
-  }
-
-  i.fa-solid.fa-xmark {
-    display: none;
   }
 
   .menu-icon {
@@ -542,6 +581,23 @@ ul.project-language li {
   .project-item img {
     width: 34em;
     height: 28em;
+  }
+
+  .popup-window img {
+    width: 95%;
+    height: 30%;
+  }
+
+  .popup-window .card-content {
+    display: flex;
+  }
+
+  .popup-card {
+    max-width: 55%;
+  }
+
+  header .fa-solid.fa-xmark {
+    display: none;
   }
 }
 
