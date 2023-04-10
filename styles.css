@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100%;
   margin: 0;
   background-color: #e5e5e5;
@@ -25,7 +25,7 @@ p {
 }
 
 .headline {
-  background-image: url('images/background_mobile.svg');
+  background-image: url("images/background_mobile.svg");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -90,6 +90,21 @@ i.fa-solid.fa-xmark {
 .logo {
   padding-left: 1.5em;
   font-size: 1.2rem;
+  animation-name: change;
+  animation-duration: 4s;
+}
+
+@keyframes change {
+  0% {
+    color: rgb(144, 124, 124);
+  }
+
+  50% {
+    color: rgb(210, 205, 205);
+  }
+  100% {
+    color: green;
+  }
 }
 
 .app-bar {
@@ -175,7 +190,7 @@ ul.icons li a {
 .button-outlined {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   outline: inherit;
   height: 3.25em;
   border: 0.1em solid #6070ff;
@@ -276,7 +291,7 @@ ul.captions li {
 
 .counter {
   display: inline-block;
-  background-image: url('images/counter.svg');
+  background-image: url("images/counter.svg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 1.5em;
@@ -324,7 +339,7 @@ ul.project-language li {
 }
 
 .contact-me .content-background {
-  background-image: url('images/contact_me_mobile.svg');
+  background-image: url("images/contact_me_mobile.svg");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
@@ -383,7 +398,7 @@ ul.project-language li {
   border: 0.1em solid #6070ff;
   border-radius: 0.75em;
   min-height: 1.6em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .textarea {
@@ -414,7 +429,7 @@ ul.project-language li {
 
 @media screen and (min-width: 768px) {
   .headline {
-    background-image: url('images/background.svg');
+    background-image: url("images/background.svg");
   }
 
   .nav {
@@ -456,7 +471,7 @@ ul.project-language li {
   }
 
   .contact-me .content-background {
-    background-image: url('images/contact_me.svg');
+    background-image: url("images/contact_me.svg");
     background-position: center center;
     background-size: contain;
     padding: 5em;
