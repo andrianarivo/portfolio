@@ -46,15 +46,45 @@ p {
   max-width: 70%;
 }
 
-ul.nav {
-  display: none;
+.nav {
+  background-color: #6070ffe0;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  visibility: hidden;
 }
 
-ul.nav li {
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+i.fa-solid.fa-xmark {
+  color: #fff;
+  align-self: flex-end;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+.nav ul li {
   display: inline;
-  flex-basis: 7em;
   flex-shrink: 0;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .logo {
@@ -387,10 +417,30 @@ ul.project-language li {
     background-image: url('images/background.svg');
   }
 
-  ul.nav {
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
+  .nav {
+    visibility: visible;
+    position: inherit;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+  }
+
+  .nav ul {
+    flex-direction: row;
+  }
+
+  .nav ul li {
+    font-size: 1rem;
+    flex-basis: 7em;
+    font-weight: 500;
+  }
+
+  .nav ul li a {
+    color: #344563;
+  }
+
+  i.fa-solid.fa-xmark {
+    display: none;
   }
 
   .menu-icon {
@@ -398,7 +448,7 @@ ul.project-language li {
   }
 
   nav {
-    padding-right: 10%;
+    padding-right: 15%;
   }
 
   .logo {

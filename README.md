@@ -12,27 +12,27 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Usage](#usage)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Portfolio is my personal online portfolio ](#-portfolio-is-my-personal-online-portfolio-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Portfolio is my personal online portfolio <a name="about-project"></a>
 
-**Portfolio** is a mobile first website to show the works I've done so far
+**Portfolio** is a mobile first website to show the works I've done so far. Take a look at my video presentation [here](https://www.loom.com/share/c8904a0b939f48cbbef35296a115b952).
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -110,7 +110,7 @@ To run the project open `index.html`
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x]  **finished mobile version**
+- [x] **finished mobile version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,4 +145,3 @@ Feel free to check the [issues page](https://github.com/andrianarivo/portfolio/i
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
