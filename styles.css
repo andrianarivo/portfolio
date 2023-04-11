@@ -182,9 +182,23 @@ ul.icons li a {
   background-color: #fff;
   align-self: flex-start;
   margin: 1.5em 0;
-  padding: 1em 1em;
+  padding: 0.8em 1em;
   font-size: 1.1rem;
   text-decoration: none;
+}
+
+.icon {
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+}
+
+.icon-export {
+  background-image: url('images/icon_export.svg');
+}
+
+.icon-github {
+  background-image: url('images/icon_github.svg');
 }
 
 ul.tools {
@@ -433,12 +447,12 @@ ul.project-language li {
 }
 
 .popup-card {
-  width: 60%;
   background-color: #fff;
   border-radius: 1em;
   padding: 0 1em;
   position: relative;
   display: flex;
+  margin: 0 2em;
   flex-direction: column;
 }
 
