@@ -341,6 +341,14 @@ ul.project-language li {
   align-items: center;
 }
 
+.popup-card .card-title .h1 {
+  margin: 0.4em 0 0;
+}
+
+.action-buttons .button-outlined {
+  font-size: 1rem;
+}
+
 .contact-me .content-background .content .h1 {
   margin-top: 2.6em;
   margin-bottom: 0;
@@ -411,7 +419,7 @@ ul.project-language li {
 }
 
 .popup-window {
-  visibility: visible;
+  visibility: hidden;
   background-color: rgba(93, 99, 108, 0.5);
   position: fixed;
   top: 0;
@@ -425,18 +433,13 @@ ul.project-language li {
 }
 
 .popup-card {
-  max-width: 80%;
+  width: 60%;
   background-color: #fff;
   border-radius: 1em;
   padding: 0 1em;
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.popup-card .card-title {
-  display: flex;
-  justify-content: space-between;
 }
 
 .popup-card .action-buttons {
@@ -446,22 +449,17 @@ ul.project-language li {
 
 .popup-card .fa-solid.fa-xmark {
   color: #67798e;
+  position: absolute;
+  top: 0.1em;
+  right: 0.1em;
 }
 
 .popup-card img {
   align-self: center;
 }
 
-.popup-card .card-title .h1 {
-  margin: 0.4em 0 0;
-}
-
 .popup-card .card-content {
   margin-top: 1em;
-}
-
-.action-buttons .button-outlined {
-  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -602,7 +600,7 @@ ul.project-language li {
   }
 
   .card-content p {
-    flex: 3;
+    flex: 2;
   }
 
   .card-content .content-actions {
