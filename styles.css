@@ -176,14 +176,13 @@ ul.icons li a {
 .button-outlined {
   font-family: 'Poppins', sans-serif;
   outline: inherit;
-  height: 3.25em;
   border: 0.1em solid #6070ff;
   border-radius: 0.75em;
   color: #396df2;
   background-color: #fff;
   align-self: flex-start;
   margin: 1.5em 0;
-  padding: 0 1em;
+  padding: 1em 1em;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -435,6 +434,11 @@ ul.project-language li {
   flex-direction: column;
 }
 
+.popup-card .card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
 .popup-card .action-buttons {
   display: flex;
   justify-content: space-around;
@@ -442,13 +446,18 @@ ul.project-language li {
 
 .popup-card .fa-solid.fa-xmark {
   color: #67798e;
-  position: absolute;
-  right: 0;
-  top: 1.2em;
 }
 
 .popup-card img {
   align-self: center;
+}
+
+.popup-card .card-title .h1 {
+  margin: 0.4em 0 0;
+}
+
+.popup-card .card-content {
+  margin-top: 1em;
 }
 
 .action-buttons .button-outlined {
@@ -583,13 +592,21 @@ ul.project-language li {
     height: 28em;
   }
 
-  .popup-window img {
-    width: 95%;
+  .popup-window .popup-card img {
+    width: 70%;
     height: 30%;
   }
 
   .popup-window .card-content {
     display: flex;
+  }
+
+  .card-content p {
+    flex: 3;
+  }
+
+  .card-content .content-actions {
+    flex: 1;
   }
 
   .popup-card {
