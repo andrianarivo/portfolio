@@ -205,4 +205,4 @@ const validateContactForm = () => {
   return formIsValid;
 };
 
-contactForm.onsubmit = validateContactForm();
+contactForm.onsubmit = () => validateContactForm();
