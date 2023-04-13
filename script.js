@@ -187,11 +187,20 @@ const loadProjects = () => {
   }
 };
 
+const contactForm = document.forms['contact-form'];
+
+const loadFormData = () => {
+  const formDataString = localStorage.getItem('formData');
+  const formData = JSON.parse(formDataString);
+  contactForm.name.value = formData.name;
+  contactForm.email.value = formData.email;
+  contactForm.message.value = formData.message;
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
+  loadFormData();
 });
-
-const contactForm = document.forms['contact-form'];
 
 const validateContactForm = () => {
   const contactEmail = contactForm.email.value;
@@ -206,3 +215,18 @@ const validateContactForm = () => {
 };
 
 contactForm.onsubmit = () => validateContactForm();
+
+window.onbeforeunload = () => {
+  const formData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  const contactName = contactForm.name.value;
+  const contactEmail = contactForm.email.value;
+  const contactMessage = contactForm.message.value;
+  formData.name = contactName;
+  formData.email = contactEmail;
+  formData.message = contactMessage;
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
