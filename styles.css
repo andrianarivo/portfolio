@@ -269,12 +269,17 @@ ul.tools li {
   align-items: flex-start;
   background-color: #fff;
   border-radius: 0.6em;
-  margin-top: 7em;
   padding: 1em;
+  margin: 7em auto 0 auto;
+  max-width: 70%;
 }
 
 .project-item * {
   margin: 0.2em 0;
+}
+
+.project-item img {
+  border-radius: 0.7em;
 }
 
 ul.captions {
@@ -473,6 +478,10 @@ ul.project-language li {
   position: absolute;
   top: 0.1em;
   right: 0.1em;
+}
+
+.popup-window .popup-card img {
+  border-radius: 0.8em;
 }
 
 .popup-card img {

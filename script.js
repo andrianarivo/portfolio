@@ -1,12 +1,13 @@
 const projects = [
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'images/project1_snapshot.png',
-    captions: ['CANOPY', 'Back End Dev', '2015'],
+    name: 'Summit',
+    description:
+      'A Creative Common website that features Genshin impact summit where users can look at the program, the featured speakers and past summits.',
+    featuredImage: 'images/cc_genshin.png',
+    captions: ['CC', 'Front-End Dev', '2023'],
     technologies: ['HTML', 'CSS', 'Javascript'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://andrianarivo.github.io/capstone-1/index.html',
+    linkToSource: 'https://github.com/andrianarivo/capstone-1',
   },
   {
     name: 'Multi-Post Stories',
