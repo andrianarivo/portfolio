@@ -1,40 +1,49 @@
 const projects = [
   {
-    name: 'Summit',
+    name: 'Genshin Summit',
     description:
       'A Creative Common website that features Genshin impact summit where users can look at the program, the featured speakers and past summits.',
     featuredImage: 'images/cc_genshin.png',
-    captions: ['CC', 'Front-End Dev', '2023'],
-    technologies: ['HTML', 'CSS', 'Javascript'],
+    captions: ['Website', 'Front-End', '2023'],
+    technologies: ['HTML', 'SASS', 'Javascript'],
     linkToLive: 'https://andrianarivo.github.io/capstone-1/index.html',
     linkToSource: 'https://github.com/andrianarivo/capstone-1',
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'images/project2_snapshot.png',
-    captions: ['CANOPY', 'Back End Dev', '2015'],
-    technologies: ['HTML', 'CSS', 'JS'],
-    linkToLive: '#',
-    linkToSource: '#',
+    name: 'Space Travelers\' Hub',
+    description: 'Space-Travelers-Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    featuredImage: 'images/space_travelers.png',
+    captions: ['WebApp', 'Front-end', '2023'],
+    technologies: ['React', 'Redux', 'Rest API', 'Styled Components'],
+    linkToLive: 'https://space-traverlers-static.onrender.com',
+    linkToSource: 'https://github.com/Salimer/Space-Travelers-Hub',
   },
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'images/project3_snapshot.png',
-    captions: ['CANOPY', 'Back End Dev', '2015'],
-    technologies: ['HTML', 'CSS', 'JS'],
-    linkToLive: '#',
-    linkToSource: '#',
+    name: 'Covid-19 Metrics',
+    description: 'The "Covid-19 Metrics" is a React-based web application that provides real-time information about the number of active COVID-19 cases on each continent and allows users to explore further by displaying the active cases for each country within a selected continent.',
+    featuredImage: 'images/covid19_metrics.png',
+    captions: ['WebApp', 'Front-end', '2023'],
+    technologies: ['React', 'Redux', 'Rest API', 'CSS'],
+    linkToLive: 'https://extraordinary-kitten-6a3f95.netlify.app/',
+    linkToSource: 'https://github.com/andrianarivo/covid-19-metrics',
   },
   {
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'images/project4_snapshot.png',
-    captions: ['CANOPY', 'Back End Dev', '2015'],
-    technologies: ['HTML', 'CSS', 'JS'],
-    linkToLive: '#',
-    linkToSource: '#',
+    name: 'Restaurant Budgeter',
+    description: 'Restaurant Budget is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImage: 'images/restaurant_budgeter.png',
+    captions: ['WebApp', 'Full-stack', '2023'],
+    technologies: ['Ruby on Rails', 'PostgreSQL', 'Google Cloud Storage'],
+    linkToLive: 'https://restaurant-budget-testing.onrender.com/',
+    linkToSource: 'https://github.com/andrianarivo/restaurant-budget',
+  },
+  {
+    name: 'DocConnect',
+    description: 'DocConnect is a Ruby on Rails web application with PostgreSQL as database. It allows to manage your budget by creating categories of expenses, and transactions for each category.',
+    featuredImage: 'images/docconnect.png',
+    captions: ['WebApp', 'Full-stack', '2023'],
+    technologies: ['Ruby on Rails', 'PostgreSQL', 'Google Cloud Storage'],
+    linkToLive: 'https://dev--jovial-longma-dea964.netlify.app/',
+    linkToSource: 'https://github.com/Atril33/DocConnect-Backend',
   },
 ];
 
@@ -83,7 +92,8 @@ const openPopupWindow = (projectItem) => {
   const projectName = document.querySelector('#project-name');
   const projectDesc = document.querySelector('#project-description');
   const projectImage = document.querySelector('#project-image');
-  const projectTechs = document.querySelectorAll('#project-technologies li');
+  const projectTechContainer = document.querySelector('#project-technologies');
+  const projectHeaders = document.querySelectorAll('ul.captions li');
   const projectLinkToLive = document.querySelector('#link-to-live');
   const projectLinkToSource = document.querySelector('#link-to-source');
 
@@ -91,9 +101,19 @@ const openPopupWindow = (projectItem) => {
   projectDesc.innerHTML = projectItem.description;
   projectImage.src = projectItem.featuredImage;
 
-  for (let i = 0; i < projectTechs.length; i += 1) {
-    projectTechs[i].innerHTML = projectItem.technologies[i];
-  }
+  let i = 0;
+  projectItem.captions.forEach((caption) => {
+    projectHeaders[i].innerHTML = caption;
+    i += 2;
+  });
+
+  projectTechContainer.innerHTML = '';
+  projectItem.technologies.forEach((technology) => {
+    const li = document.createElement('li');
+    li.className = 'text-medium text-dark-purple';
+    li.innerText = technology;
+    projectTechContainer.appendChild(li);
+  });
 
   projectLinkToLive.href = projectItem.linkToLive;
   projectLinkToSource.href = projectItem.linkToSource;

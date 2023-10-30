@@ -271,7 +271,6 @@ ul.tools li {
   border-radius: 0.6em;
   padding: 1em;
   margin: 7em auto 0 auto;
-  max-width: 70%;
 }
 
 .project-item * {
@@ -324,6 +323,9 @@ ul.project-language {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.3em;
+  flex-wrap: wrap;
+  max-width: 20em;
+  gap: 0.25em;
 }
 
 ul.project-language li {
@@ -471,6 +473,7 @@ ul.project-language li {
 .popup-card .action-buttons {
   display: flex;
   justify-content: space-around;
+  gap: 1em;
 }
 
 .popup-card .fa-solid.fa-xmark {
@@ -599,6 +602,7 @@ ul.project-language li {
 
   .project-item {
     flex-direction: row;
+    max-width: 70%;
   }
 
   .project-item:nth-child(even) {
@@ -640,7 +644,7 @@ ul.project-language li {
   }
 
   .card-content .content-actions {
-    flex: 1;
+    /*flex: 1;*/
   }
 
   .popup-card {
