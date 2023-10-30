@@ -227,3 +227,35 @@ const validateContactForm = () => {
 };
 
 contactForm.onsubmit = () => validateContactForm();
+
+const toolsHeaders = document.querySelectorAll('.tools-header');
+
+toolsHeaders.forEach((header, index) => {
+  header.addEventListener('click', () => {
+    closeToolsHeaders();
+    const isOpen = header.querySelector('i').className === 'fa-sharp fa-solid fa-chevron-down'
+    if(isOpen) {
+      header.nextElementSibling.style.display = 'none';
+      header.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-right';
+    } else {
+      openToolsHeader(header)
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  closeToolsHeaders();
+  openToolsHeader(toolsHeaders[0]);
+});
+
+const openToolsHeader = (element) => {
+  element.nextElementSibling.style.display = 'flex';
+  element.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-down';
+}
+
+const closeToolsHeaders = () => {
+  toolsHeaders.forEach((header, index) => {
+    header.nextElementSibling.style.display = 'none';
+    header.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-right';
+  });
+}

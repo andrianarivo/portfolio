@@ -224,6 +224,7 @@ ul.tools li {
   justify-content: space-between;
   align-items: center;
   margin: 1.5em 0;
+  cursor: pointer;
 }
 
 .tools-item-detail {
@@ -234,10 +235,7 @@ ul.tools li {
   background-color: #f7f7f9;
   border-radius: 0.6em;
   margin-bottom: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-right: 0.5em;
-  padding-left: 1.5em;
+  padding: 0.5em 0.5em 0.5em 1.5em;
 }
 
 .tools-item-detail p {
@@ -250,7 +248,7 @@ ul.tools li {
 }
 
 .tools-item {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
