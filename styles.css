@@ -654,6 +654,13 @@ ul.project-language li {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1115px) {
+  .project-item img {
+    width: 24em;
+    height: 18em;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .headline {
     background-image: none;

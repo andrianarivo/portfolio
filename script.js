@@ -6,7 +6,7 @@ const projects = [
     featuredImage: 'images/cc_genshin.png',
     captions: ['Website', 'Front-End', '2023'],
     technologies: ['HTML', 'SASS', 'Javascript'],
-    linkToLive: 'https://andrianarivo.github.io/capstone-1/index.html',
+    linkToLive: 'https://andrianarivo.github.io/Genshin-Summit',
     linkToSource: 'https://github.com/andrianarivo/capstone-1',
   },
   {
@@ -259,3 +259,20 @@ const closeToolsHeaders = () => {
     header.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-right';
   });
 }
+
+const typewriterTarget = document.querySelector('#typewriter-target');
+const typewriter = new Typewriter(typewriterTarget, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .typeString('LET\'S CONNECT')
+  .pauseFor(1000)
+  .deleteChars(14)
+  .typeString('GET IN TOUCH')
+  .pauseFor(1000)
+  .deleteChars(12)
+  .typeString('FIND ME ON SOCIAL MEDIA')
+  .pauseFor(1000)
+  .start();
