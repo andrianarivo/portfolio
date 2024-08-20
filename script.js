@@ -10,8 +10,9 @@ const projects = [
     linkToSource: 'https://github.com/andrianarivo/capstone-1',
   },
   {
-    name: 'Space Travelers\' Hub',
-    description: 'Space-Travelers-Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    name: "Space Travelers' Hub",
+    description:
+      'Space-Travelers-Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     featuredImage: 'images/space_travelers.png',
     captions: ['WebApp', 'Front-end', '2023'],
     technologies: ['React', 'Redux', 'Rest API', 'Styled Components'],
@@ -19,30 +20,13 @@ const projects = [
     linkToSource: 'https://github.com/Salimer/Space-Travelers-Hub',
   },
   {
-    name: 'Covid-19 Metrics',
-    description: 'The "Covid-19 Metrics" is a React-based web application that provides real-time information about the number of active COVID-19 cases on each continent and allows users to explore further by displaying the active cases for each country within a selected continent.',
-    featuredImage: 'images/covid19_metrics.png',
-    captions: ['WebApp', 'Front-end', '2023'],
-    technologies: ['React', 'Redux', 'Rest API', 'CSS'],
-    linkToLive: 'https://extraordinary-kitten-6a3f95.netlify.app/',
-    linkToSource: 'https://github.com/andrianarivo/covid-19-metrics',
-  },
-  {
-    name: 'Restaurant Budgeter',
-    description: 'Restaurant Budget is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    featuredImage: 'images/restaurant_budgeter.png',
-    captions: ['WebApp', 'Full-stack', '2023'],
-    technologies: ['Ruby on Rails', 'PostgreSQL', 'Google Cloud Storage'],
-    linkToLive: 'https://restaurant-budget-testing.onrender.com/',
-    linkToSource: 'https://github.com/andrianarivo/restaurant-budget',
-  },
-  {
     name: 'DocConnect',
-    description: 'DocConnect is a Ruby on Rails web application with PostgreSQL as database. It allows to manage your budget by creating categories of expenses, and transactions for each category.',
+    description:
+      'DocConnect is a Ruby on Rails RESTApi and React web application with PostgreSQL as database. It allows to book appointments with doctors handpicked by our admins for your healthcare.',
     featuredImage: 'images/docconnect.png',
     captions: ['WebApp', 'Full-stack', '2023'],
     technologies: ['Ruby on Rails', 'PostgreSQL', 'Google Cloud Storage'],
-    linkToLive: 'https://dev--jovial-longma-dea964.netlify.app/',
+    linkToLive: 'https://docconnect.netlify.app',
     linkToSource: 'https://github.com/Atril33/DocConnect-Backend',
   },
 ];
@@ -233,12 +217,12 @@ const toolsHeaders = document.querySelectorAll('.tools-header');
 toolsHeaders.forEach((header, index) => {
   header.addEventListener('click', () => {
     closeToolsHeaders();
-    const isOpen = header.querySelector('i').className === 'fa-sharp fa-solid fa-chevron-down'
-    if(isOpen) {
+    const isOpen = header.querySelector('i').className === 'fa-sharp fa-solid fa-chevron-down';
+    if (isOpen) {
       header.nextElementSibling.style.display = 'none';
       header.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-right';
     } else {
-      openToolsHeader(header)
+      openToolsHeader(header);
     }
   });
 });
@@ -251,14 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
 const openToolsHeader = (element) => {
   element.nextElementSibling.style.display = 'flex';
   element.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-down';
-}
+};
 
 const closeToolsHeaders = () => {
   toolsHeaders.forEach((header, index) => {
     header.nextElementSibling.style.display = 'none';
     header.querySelector('i').className = 'fa-sharp fa-solid fa-chevron-right';
   });
-}
+};
 
 const typewriterTarget = document.querySelector('#typewriter-target');
 const typewriter = new Typewriter(typewriterTarget, {
@@ -267,7 +251,7 @@ const typewriter = new Typewriter(typewriterTarget, {
 });
 
 typewriter
-  .typeString('LET\'S CONNECT')
+  .typeString("LET'S CONNECT")
   .pauseFor(1000)
   .deleteChars(14)
   .typeString('GET IN TOUCH')
